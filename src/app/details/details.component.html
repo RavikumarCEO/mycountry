@@ -1,0 +1,60 @@
+
+<h1>COUNTRY DETAILS</h1>
+
+<div class="container my-3 border">
+<div class="row">
+<div class="col">
+<h1>Flag</h1>
+<img [src]="name[0].flag" alt="" width="200px">
+</div>
+<div class="col-6">
+ <h1>Country Name</h1>   
+ <p style="font-size: medium;">{{name[0].name}}
+</div>
+</div>
+<div class="row">
+    <div class="col">
+        <h1>Region</h1>
+        <p style="font-size: medium;">{{name[0].region}}</p>
+    </div>
+    <div class="col">
+        <h1>Subregion</h1>
+        <p style="font-size: medium;"> {{name[0].subregion}}</p>
+
+</div>
+</div>
+<div class="row">
+<div class="col">
+ <h1>Capital</h1>   
+ <p style="font-size: medium;">{{name[0].capital}}</p>
+</div>
+<div class="col-6">
+    <h1>Borders</h1>
+    <p style="font-size: medium;">{{name[0].borders}}</p>
+</div>
+</div>
+<div class="row">
+<div class="col">
+    <h1>Timezones</h1>
+    <p style="font-size: medium;">{{name[0].timezones}}</p>
+</div>
+<div class="col-6">
+    <h1>Languages</h1>
+    <div *ngFor="let name of name[0].languages">
+        <p style="font-size: medium;"> {{name.name}}</p>
+    </div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+    <h1>Currencies</h1>
+    <div *ngFor="let name of name[0].currencies">
+        <p style="font-size: medium;">{{name.name}}</p>
+    </div>
+<div class="col-6">
+        <h1>Population</h1>
+        <p style="font-size: medium;">{{name[0].population}}</p>
+</div>
+</div>
+</div>
+</div>
